@@ -1,0 +1,46 @@
+
+/*
+primero no pondremos margenes y asi utilizaremos toda la pantalla, pondremos un color de fondo claro pero no blanco
+**/
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+}
+/*
+largo de 40 con un padding de 10px y el ancho le restamos al 100 los px de padding en cada lado, para que todo este alineado 
+utilizaremos display flex, haremos que se quede en una posicion fija 
+**/
+header{
+    height: 40px;
+    padding: 10px;
+    width: calc(100% -20px);
+    line-height: 40px;
+    display: flex;
+    background: linear-gradient(45deg,#16f054,#28b450);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/*
+
+**/
+.logo-place{
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+}
+.logo-place img{
+    width: 100%;
+}
+.search{
+    width: calc(100% - 420px);
+    display: flex;
+    padding: 0px 20px;
+}
+options-place{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}

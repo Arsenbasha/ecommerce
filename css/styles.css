@@ -1,46 +1,130 @@
-
 /*
 primero no pondremos margenes y asi utilizaremos toda la pantalla, pondremos un color de fondo claro pero no blanco
 **/
-body,html{
+body,
+html {
     margin: 0;
     padding: 0;
     background-color: #efefef;
 }
+
 /*
 largo de 40 con un padding de 10px y el ancho le restamos al 100 los px de padding en cada lado, para que todo este alineado 
 utilizaremos display flex, haremos que se quede en una posicion fija 
 **/
-header{
+header {
     height: 40px;
     padding: 10px;
-    width: calc(100% -20px);
+    width: calc(100% - 20px);
     line-height: 40px;
     display: flex;
-    background: linear-gradient(45deg,#16f054,#28b450);
+    background: linear-gradient(45deg, #16f054, #28b450);
     position: fixed;
     top: 0;
     left: 0;
 }
+
 /*
 
 **/
-.logo-place{
+.logo-place {
     width: 150px;
     justify-content: center;
     align-items: center;
     margin: 7px;
 }
-.logo-place img{
+
+.logo-place img {
     width: 100%;
 }
-.search{
-    width: calc(100% - 420px);
+
+.search {
+    width: calc(100% - 440px);
     display: flex;
     padding: 0px 20px;
 }
-options-place{
+
+.search input {
+    padding: 10px;
+    font-size: 15px;
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    width: calc(100% - 62px);
+}
+
+/*
+Un ncho de 250px que este alineado y que se alinee al final 
+**/
+.option-place {
     width: 250px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+}
+
+.items-options {
+    padding: 5px 10px;
+    line-height: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+}
+
+.contenido {
+    margin-top: 60px;
+    width: 100%;
+
+}
+
+.pagina {
+    margin: auto;
+    padding: 10px;
+    width: calc(100% - 20px);
+    max-width: 1180px;
+}
+
+.title-seccion {
+    padding: 10px, 0;
+    font-size: 100%;
+    color: grey;
+}
+
+.lista {
+    display: table;
+    width: 100%;
+}
+
+.producto-body{
+    display: inline-table;
+    padding: 10px;
+    width: calc(100%/5-20px);
+}
+
+.producto {
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.producto-title {
+    padding: 10px, 0;
+    font-size: 100%;
+    color: black;
+    font-weight: bold;
+}
+
+.producto-descripcion {
+    padding: 10px, 0;
+    font-size: 100%;
+    color: grey;
+}
+.producto-precio{
+    padding: 10px, 0;
+    font-size: 100%;
+    color: black;
 }

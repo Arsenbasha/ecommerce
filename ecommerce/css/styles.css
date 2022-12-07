@@ -1,0 +1,267 @@
+/*
+primero no pondremos margenes y asi utilizaremos toda la pantalla, pondremos un color de fondo claro pero no blanco
+**/
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+}
+
+/*
+largo de 40 con un padding de 10px y el ancho le restamos al 100 los px de padding en cada lado, para que todo este alineado 
+utilizaremos display flex, haremos que se quede en una posicion fija 
+**/
+header {
+    height: 40px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    line-height: 40px;
+    display: flex;
+    background: linear-gradient(45deg, #16f054, #28b450);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*
+
+**/
+.logo-place {
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+}
+
+.logo-place img {
+    width: 100%;
+}
+
+.search {
+    width: calc(100% - 440px);
+    display: flex;
+    padding: 0px 20px;
+}
+
+.search input {
+    padding: 10px;
+    font-size: 15px;
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    width: calc(100% - 62px);
+}
+
+/*
+Un ncho de 250px que este alineado y que se alinee al final 
+**/
+.option-place {
+    width: 250px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.option-place h3 {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.items-options {
+    padding: 5px 10px;
+    line-height: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+}
+
+
+.contenido {
+    margin-top: 120px;
+    width: 100%;
+
+}
+
+.pagina {
+    margin: auto;
+    padding: 10px;
+    width: calc(100% - 20px);
+    max-width: 1180px;
+}
+
+.pagina section {
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.itemright {
+    padding: 5px;
+    width: calc(40% - 10px);
+}
+
+.itemleft {
+    padding: 5px;
+    width: calc(60% - 10px);
+}
+
+.itemleft img {
+    width: 100%;
+}
+
+.itemright * {
+    margin: 10px 0;
+    color: #999;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#precioProducto {
+    color: red;
+    font-style: italic;
+
+}
+
+.title-seccion {
+    padding: 10px, 0;
+    font-size: 100%;
+    color: grey;
+}
+
+.lista {
+    display: table;
+    width: 100%;
+}
+
+.producto-body {
+    display: inline-table;
+    padding: 10px;
+    width: calc(100%/5-20px);
+}
+
+.producto {
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.producto img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.producto-title {
+    padding: 10px, 0;
+    font-size: 100%;
+    height: 35px;
+    color: black;
+    font-weight: bold;
+    width: calc(100%-10px);
+    text-align: center;
+}
+
+.producto-descripcion {
+    padding: 10px, 5px;
+    font-size: 100%;
+    color: grey;
+    height: 35px;
+}
+
+.producto-precio {
+    padding: 10px, 0;
+    font-size: 100%;
+    color: red;
+    text-align: center;
+}
+
+.btncomprar {
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ff1200;
+    font-style: oblique;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+/*
+Inicio de sesion 
+*/
+.initSesion {
+    max-width: 510px;
+    width: calc(100%-40px);
+    padding: 20px;
+    background: #ff9;
+    border-radius: 5px;
+
+    margin: auto;
+}
+
+.initSesion h1 {
+
+    margin: 10px;
+}
+
+.initSesion input {
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 24px);
+}
+
+.initSesion p {
+    margin: 0;
+    margin-bottom: 5px;
+    color: #ff1200;
+    font-size: 12px;
+}
+
+.initSesion button {
+    padding: 10px, 15px;
+    width: 100%;
+    border: none;
+    background-color: #ff1200;
+    color: white;
+}
+
+.bodyPedido {
+    width: 100%;
+  
+}
+
+.itemPedido {
+    background-color: whitesmoke;
+    display: flex;
+    border: #999 1px solid;
+    margin-bottom: 5px;
+}
+
+.imgPedido {
+    width: 200px;
+}
+
+.itemDetall {
+    padding: 10px;
+    width: calc(100% - 220px);
+}
+
+button {
+    background-color: #ff1200;
+    color: whitesmoke;
+    border-radius: 5px;
+    border-style: none;
+    padding: 15px 20px;
+}
+.iptCompra{
+padding: 10px;
+font-size: 15px;
+background-color: whitesmoke;
+border: 1px solid;
+width: 200px;
+}
